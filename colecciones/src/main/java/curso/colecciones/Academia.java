@@ -39,7 +39,7 @@ public class Academia {
         
     }
     
-    public void addAula(Aula, aula){
+    public void addAula(Aula aula){
         
     }
 }
