@@ -1,12 +1,14 @@
 
 package curso.colecciones;
 
+import java.util.Set;
+
 
 public class Aula {
     private String aula;
     private int capacidad;
     private boolean tieneProyector;
-    private set<Asignatura> asignatura;
+    private Set<Asignatura> asignatura;
 
     public String getAula() {
         return aula;

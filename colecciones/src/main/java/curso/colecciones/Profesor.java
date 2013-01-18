@@ -1,12 +1,14 @@
 
 package curso.colecciones;
 
+import java.util.Set;
+
 
 public class Profesor {
     Integer Id;
     String Nombre;
     String Direccion;
-    set<Asignatura> asignatura;
+    Set<Asignatura> asignatura;
 
     public Integer getId() {
         return Id;
