@@ -6,5 +6,5 @@ Es creado por Ignacio
 
 para ver si la cosa funciona.
 
-// Esto es un comentario
+// Esto es un comentario muy bonito
 
