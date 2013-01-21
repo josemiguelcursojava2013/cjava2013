@@ -48,6 +48,9 @@ public class Asignatura {
     public void setInicio(Date inicio){
         this.inicio=inicio;
     }
+    public void setAula(Aula myAula){
+        this.myAula=myAula;
+    }
     public void setFin(Date fin){
         this.fin=fin;
     }
@@ -59,6 +62,9 @@ public class Asignatura {
     }
     public Profesor getProfesor(){
         return myProfesor;
+    }
+    public Aula getAula(){
+        return myAula;
     }
     public int getHoras(){
         return horas;
