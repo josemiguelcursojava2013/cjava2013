@@ -73,8 +73,4 @@ public class Asignatura {
     public Date setFin(){
         return fin;
     }
-    @Override
-    public String toString(){
-        return ("Asignatura: "+this.nombre +"e identificador: "+this.id);
-    }
 }

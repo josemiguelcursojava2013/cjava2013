@@ -35,22 +35,15 @@ public class Alumno {
         return id;
     }
 
-    public String getNombre() {
+    public String nombre() {
         return nombre;
     }
 
     public void addAsignatura(Asignatura asignatura) {
-        if(!misAsignaturas.contains(asignatura.getNombre())){
-            misAsignaturas.add(asignatura);
-        }
+        misAsignaturas.add(asignatura);
     }
+
     public void removeAsignatura(Asignatura asignatura) {
-        if(misAsignaturas.contains(asignatura.getNombre())){
-            misAsignaturas.remove(asignatura);
-        }
-    }
-    @Override
-    public String toString(){
-        return ("Alumno: "+this.nombre +"e identificador: "+this.id);
+        misAsignaturas.remove(asignatura);
     }
 }
