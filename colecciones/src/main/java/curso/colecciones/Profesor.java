@@ -8,7 +8,7 @@ public class Profesor {
     Integer Id;
     String Nombre;
     String Direccion;
-    Set<Asignatura> asignatura;
+    Set<Asignatura> asignaturas;
 
     public Integer getId() {
         return Id;
@@ -35,8 +35,14 @@ public class Profesor {
     }
 
     public void addAsignatura(Asignatura asignatura) {
+        asignaturas.add(asignatura);
         return ;
     }
+     public void removeAsignatura(Asignatura asignatura) {
+         asignaturas.remove(asignatura);
+        return ;
+    }
+    
 
     }
     
