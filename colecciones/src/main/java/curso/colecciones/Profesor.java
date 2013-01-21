@@ -10,6 +10,12 @@ public class Profesor {
     String Direccion;
     Set<Asignatura> asignaturas;
 
+    public Profesor(Integer Id, String Nombre, String Direccion) {
+        this.Id = Id;
+        this.Nombre = Nombre;
+        this.Direccion = Direccion;
+    }
+    
     public Integer getId() {
         return Id;
     }

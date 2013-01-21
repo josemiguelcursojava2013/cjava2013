@@ -10,6 +10,11 @@ public class Aula {
     private boolean tieneProyector;
     private Set<Asignatura> asignatura;
 
+    public Aula(String aula, int capacidad, boolean tieneProyector) {
+        this.aula = aula;
+        this.capacidad = capacidad;
+        this.tieneProyector = tieneProyector;
+    }
     public String getAula() {
         return aula;
     }

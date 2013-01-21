@@ -11,7 +11,12 @@ public class Academia {
   Map<Integer, Asignatura> asignaturas;
   Map<String, Aula> aulas;
 
-    public String getNombre() {
+    public Academia(String nombre, String direccion) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+    }
+
+  public String getNombre() {
         return nombre;
     }
 
