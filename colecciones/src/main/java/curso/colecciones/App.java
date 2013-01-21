@@ -48,12 +48,18 @@ public class App
             calendar.set(Calendar.YEAR,2013);
             Date fecha1 = calendar1.getTime();
           
-        Asignatura asi1 = new Asignatura(1,"Luis Gomez",profe1,aula1,9,new Date(),fecha);
-        Asignatura asi2 = new Asignatura(2,"Pepe Perez",profe1,aula1,9,new Date(),fecha1);
+        Asignatura asi1 = new Asignatura(1,"Matematicas",profe1,aula1,9,new Date(),fecha);
+        Asignatura asi2 = new Asignatura(2,"Java",profe1,aula1,9,new Date(),fecha1);
         
-
+        Alumno alu1 = new Alumno(1,"Juan perez");
+        Alumno alu2 = new Alumno(2,"Armando Sopena");
+        Alumno alu3 = new Alumno(3,"Juan perez");
+        Alumno alu4 = new Alumno(4,"Armando Sopena");
         
-        
+        aca.matricular(alu4, asi2);
+        aca.matricular(alu1, asi1);
+        aca.matricular(alu1, asi2);
+        aca.matricular(alu2, asi1);
     }
     
     
