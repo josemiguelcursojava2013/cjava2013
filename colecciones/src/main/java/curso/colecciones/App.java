@@ -60,6 +60,12 @@ public class App
         aca.matricular(1,alu1, 1,asi1);
         aca.matricular(1,alu1,2, asi2);
         aca.matricular(2,alu2,1,asi1);
+        
+        
+        aca.listaAsignaturas();
+        aca.listaProfesores();
+        aca.listaAulas();
+        aca.listaAlumnos();
     }
     
     

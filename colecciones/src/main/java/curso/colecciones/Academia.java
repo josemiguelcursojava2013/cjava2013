@@ -2,6 +2,7 @@
 package curso.colecciones;
 
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Academia {
   private String nombre;  
@@ -14,6 +15,10 @@ public class Academia {
     public Academia(String nombre, String direccion) {
         this.nombre = nombre;
         this.direccion = direccion;
+        this.alumnos = new TreeMap<Integer, Alumno>();
+        this.profesores = new TreeMap<Integer,Profesor>();
+        this.asignaturas = new TreeMap<Integer,Asignatura>();
+        this.aulas = new TreeMap<String,Aula>();
     }
 
   public String getNombre() {
@@ -45,7 +50,7 @@ public class Academia {
     }
     
     public void addAula(String s, Aula aula){
-         aulas.put(s, aula);
+         aulas.p.put(s, aula);
     }
     
     public void removeAlumno(Integer i) {
@@ -65,18 +70,22 @@ public class Academia {
     }
     
     public void listaAsignaturas(){
+        System.out.println("\n Listado de Asignaturas");
         System.out.println(asignaturas);
     }
     
     public void listaProfesores(){
+         System.out.println("\n Listado de Profesores");
         System.out.println(profesores);
     }
     
     public void listaAulas(){
+         System.out.println("\n Listado de Aulas");
         System.out.println(aulas);
     }
       
     public void listaAlumnos(){
+         System.out.println("\n Listado de alumnos");
         System.out.println(alumnos);
     }  
     

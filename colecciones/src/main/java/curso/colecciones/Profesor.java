@@ -2,6 +2,7 @@
 package curso.colecciones;
 
 import java.util.Set;
+import java.util.TreeSet;
 
 
 public class Profesor {
@@ -14,6 +15,7 @@ public class Profesor {
         this.Id = Id;
         this.Nombre = Nombre;
         this.Direccion = Direccion;
+        this.asignaturas = new TreeSet<Asignatura>();
     }
     
     public Integer getId() {
