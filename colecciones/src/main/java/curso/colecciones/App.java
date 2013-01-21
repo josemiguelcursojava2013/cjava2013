@@ -56,10 +56,10 @@ public class App
         Alumno alu3 = new Alumno(3,"Juan perez");
         Alumno alu4 = new Alumno(4,"Armando Sopena");
         
-        aca.matricular(alu4, asi2);
-        aca.matricular(alu1, asi1);
-        aca.matricular(alu1, asi2);
-        aca.matricular(alu2, asi1);
+        aca.matricular(4,alu4,2, asi2);
+        aca.matricular(1,alu1, 1,asi1);
+        aca.matricular(1,alu1,2, asi2);
+        aca.matricular(2,alu2,1,asi1);
     }
     
     

@@ -113,10 +113,11 @@ public class Academia {
         
     } 
     
-    public void matricular (Alumno alu, Asignatura asig){
+    public void matricular (Integer i, Alumno alu, Integer j, Asignatura asig){
+    
+     this.addAlumno(i,alu);
+     this.addAsignatura(j,asig);
     }
-    
-    
     
     }
     
