@@ -64,19 +64,59 @@ public class Academia {
         aulas.remove(s);
     }
     
-    public void listaAsignaturas(String s){
+    public void listaAsignaturas(){
         System.out.println(asignaturas);
     }
     
-    public void listaProfesores(String s){
+    public void listaProfesores(){
         System.out.println(profesores);
     }
     
-    public void listaAulas(String s){
+    public void listaAulas(){
         System.out.println(aulas);
     }
       
-    public void listaAlumnos(String s){
+    public void listaAlumnos(){
         System.out.println(alumnos);
     }  
-}
+    
+    
+    public boolean existeAsignatura(Integer i){
+          if(!alumnos.isEmpty() && alumnos.containsKey(i)){
+            return true;
+          }
+          else {
+              return false;
+          }
+        }
+        
+    public boolean existeProfesor(Integer i){
+      if(!profesores.isEmpty() && profesores.containsKey(i))
+            return true;
+         else 
+              return false;
+          
+    }
+    
+    public boolean existeAula(Integer i){
+         if(!aulas.isEmpty() && aulas.containsKey(i))
+            return true;
+         else 
+              return false;
+    }
+      
+    public boolean existeAlumno(String s){
+        if(!alumnos.isEmpty() && alumnos.containsKey(s))
+            return true;
+         else 
+              return false;
+        
+    } 
+    
+    public void matricular (Alumno alu, Asignatura asig){
+    }
+    
+    
+    
+    }
+    
