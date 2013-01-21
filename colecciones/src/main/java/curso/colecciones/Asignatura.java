@@ -85,6 +85,11 @@ public class Asignatura {
             misAlumnos.remove(alumno);
         }
     }
+    public void alumnosAtiendenAsignatura(){
+        for(Alumno nombre: misAlumnos){
+            System.out.println(" "+nombre.getId()+" "+nombre.getNombre());
+        }
+    }
     @Override
     public boolean equals(Object obj){
         
