@@ -33,10 +33,6 @@ public class Asignatura {
         this.fin = fin;
         misAlumnos = new TreeSet<Alumno>();
     }
-
-    public void addAlumno(Alumno myAlumno) {
-        misAlumnos.add(myAlumno);
-    }
     public void setId(int id){
         this.id=id;
     }
@@ -72,6 +68,34 @@ public class Asignatura {
     }
     public Date setFin(){
         return fin;
+    }
+    public void addAlumno(Alumno alumno) {
+        if(misAlumnos.isEmpty() || !misAlumnos.contains(alumno)){
+            misAlumnos.add(alumno);
+        }
+    }
+    public void removeAlumno(Alumno alumno) {
+        if(!misAlumnos.isEmpty() && misAlumnos.contains(alumno)){
+            misAlumnos.remove(alumno);
+        }
+    }
+    @Override
+    public boolean equals(Object obj){
+        
+        if(obj==null){
+            return false;
+        }
+        if(obj.getClass()!=this.getClass()){
+            return false;
+        }
+        Asignatura miAsignatura=(Asignatura) obj;
+        if(this.nombre!=miAsignatura.nombre){
+            return false;
+        }
+        if(this.id!=miAsignatura.id){
+            return false;
+        }
+        return true;
     }
     @Override
     public String toString(){
