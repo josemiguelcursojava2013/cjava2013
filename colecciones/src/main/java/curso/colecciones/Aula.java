@@ -34,13 +34,8 @@ public class Aula {
         this.tieneProyector = tieneProyector;
     }
     
-    public void addAsignatura(Asignatura a) {
-        asignatura.add(a);
+    public void addAsignatura(Asignatura asignatura) {
         
     }
-     public void removeAsignatura(Asignatura a) {
-        asignatura.remove(a);
-        
-    }
-       
+    
 }
